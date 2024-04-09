@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Papa Ver's Bundatan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+<style>
+
+body {
+  font-family: 'Barlow Semi Condensed';
+  font-style: bold;
+  background: #E8BD24;
+}
+
+* {box-sizing: border-box;}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFD53E;
+  overflow-x: hidden;
+  transition: 0.8s;
+  padding-top: 80px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  TEXT-DECORATION:NONE;
+  color: black;
+  display: block;
+  transition: 0.8s;
+}
+
+.sidebar a:hover {
+  color: #FF711A;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 25PX;
+  font-family: 'Barlow Semi Condensed';
+  cursor: pointer;
+  background-color: #FF711A;
+  color: white;
+  padding: 10px 15px;
+  border: #FFD53E;
+}
+
+.openbtn:hover {
+  background-color: #E8BD24;
+}
+
+.button {
+  border: 3px solid;
+  background-color: #E8BD24;
+  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.button1 {
+width: 40%;
+margin-bottom: 20px;
+border-radius: 5px;
+}
+
+
+.button1:hover {
+background-color: #FF711A;
+}
+
+.button2 {
+width: 40%;
+border-radius: 5px;
+}
+
+.button2:hover {
+background-color: #FF711A;
+}
+
+#main {
+  transition: margin-left .3s; 
+  padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="#";>ABOUT US</a>
+  <a href="#";>CONTACT US</a>
+  <a href="#";>FIND US</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">LEARN MORE</button> <h1 style="font-size:8vw; text-align:center;">PAPA VER'S BUNDATAN</h1>
+</div>
+<button class="button button1" style="font-family: 'Barlow Semi Condensed';";>MENU</button>
+<button class="button button2" style="font-family: 'Barlow Semi Condensed';">RESERVATION</button>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "0px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

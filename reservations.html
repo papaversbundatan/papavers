@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reservation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+<style>
+
+*{
+box-sizing:
+border-box:
+padding:0;
+margin:0;
+}
+
+body {
+font-family: 'Barlow Semi Condensed';
+font-style: bold;
+background: #E8BD24;
+}
+
+.banner{
+min-height:100vh;
+background: #E8BD24;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:black;
+padding-bottom:20px;
+}
+
+.banner h2{
+padding-bottom:40px;
+margin-bottom:40x;
+}
+
+.card-content {
+background: #FFD53E;
+height: 330px;
+}
+
+.card-content h3 {
+text-align:center;
+color: black;
+padding: 25px 0 10px 0;
+font-size: 26px;
+font-weight:500;
+}
+
+.form-row {
+display:flex;
+width:90%;
+margin:0 auto;
+}
+
+form select, form input {
+display: block;
+width:100%;
+margin: 15px 12px;
+padding:15px;
+font-size:15px;
+font-family:'Barlow Semi Condensed';
+outline:none;
+border:none;
+border-bottom:1px solid #FFD53E;
+font-weight:300;
+}
+
+form input [type = text], form input[type = number],form input::placeholder,select{
+color:black;
+}
+
+form input[type = submit]{
+color:black;
+background: #FF711A;
+padding: 12px 0;
+border-radius:4px;
+cursor:pointer;
+}
+
+form input[type = submit]:hover{
+opacity:0.9;
+
+
+</style>
+</head>
+<body>
+
+<section class = "banner">
+ <h1 style="font-size:8vw;">BOOK YOUR TABLE NOW! </h1> <br> <br>
+
+ <div class = "card-content">
+ <h3> RESERVATION </h3>
+    <form>
+      <div class = "form-row">
+           <select name = "days"> 
+           <option value = "day-select">SELECT DAY</option>
+<option value = "sunday">SUNDAY</option>
+<option value = "monday">MONDAY</option>
+<option value = "tuesday">TUESDAY</option>
+<option value = "wednesday">WEDNESDAY</option>
+<option value = "thursday">THURSDAY</option>
+<option value = "friday">FRIDAY</option>
+<option value = "saturday">SATURDAY</option>
+</select>
+
+        <select name = "hours">
+        <option value = "hour-select">SELECT HOUR</option>
+<option value = "5">5:00</option>
+<option value = "5">6:00</option>
+<option value = "5">7:00</option>
+<option value = "5">8:00</option>
+<option value = "5">9:00</option>
+<option value = "5">10:00</option>
+<option value = "5">11:00</option>
+<option value = "5">12:00</option>
+</select>
+</div>
+
+<div class = "form-row">
+<input type = "text" placeholder = "FULL NAME">
+<input type = "text" placeholder = "PHONE NUMBER">
+</div>
+
+<div class = "form-row">
+<input type = "number" placeholder = "HOW MANY PEOPLE?" min = "1">
+<input type = "submit" value = "BOOK TABLE">
+</div>
+</form>
+</div>
+</div>
+</section>
+</body>
+</html>
+ 
+     
+
+
+
